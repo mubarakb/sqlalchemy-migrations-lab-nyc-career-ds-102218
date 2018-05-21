@@ -14,9 +14,9 @@ class TestMigrations(unittest.TestCase):
         self.assertEqual(leonardo.headband_color, 'blue')
 
     def test_add_column_to_ninjaturtles_model_table(self):
-        cursor.execute("INSERT INTO ninjaturtles (name, headband_color) VALUES ('Leonardo', 'blue');")
+        cursor.execute("INSERT INTO ninja_turtles (name, headband_color) VALUES ('Leonardo', 'blue');")
         result = (1, 'Leonardo', 'blue')
-        self.assertEqual(cursor.execute("SELECT * FROM ninjaturtles;").fetchone(), result)
+        self.assertEqual(cursor.execute("SELECT * FROM ninja_turtles;").fetchone(), result)
 
     def test_create_surf_pirates_model(self):
         laird = SurfPirate(name='Laird Hamilton', largest_wave_surfed=90, seen_great_white=True, date_started_surfing='2018-05-21 10:00:00')

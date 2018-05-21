@@ -17,7 +17,8 @@ Remember to 1) run `alembic init alembic` in your terminal to initialize the Ale
 
 ### Migrations
 
-1.  Add column to **`ninja_turtles`** table
+1.  Add a column to **`ninja_turtles`** table
+
     Write a migration to add a column for tracking each ninja turtle's `headband_color`.  Make sure to include instructions for dropping the column in the downgrade function.  Execute the migration with `alembic upgrade head`.
     
 2.  **`surf_pirates`** table:
