@@ -2,7 +2,7 @@ import unittest, sqlite3, sys
 sys.path.insert(0, '..')
 from models import NinjaTurtle, SurfPirate, SkiBum, BingoPlayer
 
-connection = sqlite3.connect('../radical.db')
+connection = sqlite3.connect('./radical.db')
 cursor = connection.cursor()
 
 
